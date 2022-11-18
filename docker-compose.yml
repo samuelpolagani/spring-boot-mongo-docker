@@ -2,7 +2,8 @@ version: '3.1'
 
 services:
   springboot:
-    image: samuelpolagani98/springbootmongo:BUILD_TAG
+    #image: samuelpolagani98/springbootmongo:BUILD_TAG
+    image: 237277575225.dkr.ecr.ap-south-1.amazonaws.com/spring-boot-mongo-app:BUILD_TAG
     restart: always # This will be ignored if we deploy in docker swarm
     environment:
     - MONGO_DB_HOSTNAME=mongo
